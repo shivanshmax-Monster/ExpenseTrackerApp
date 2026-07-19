@@ -28,6 +28,15 @@ export default function DashboardScreen() {
   const { user, profile } = useAuth();
   const router = useRouter();
 
+  const handleLogout = async () => {
+    try {
+      await signOut(auth);
+      router.replace('/(auth)/login');
+    } catch (error) {
+      console.error("Error logging out", error);
+    }
+  };
+
   useEffect(() => {
     if (!user) {
       setLoading(false);
@@ -248,9 +257,14 @@ export default function DashboardScreen() {
           <Text style={styles.greeting}>Hello,</Text>
           <Text style={styles.name}>{profile?.name || user?.email?.split('@')[0] || 'User'}</Text>
         </View>
-        <TouchableOpacity onPress={handleExportPress} style={styles.exportButton}>
-          <Ionicons name="download-outline" size={24} color="#f8fafc" />
-        </TouchableOpacity>
+        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+          <TouchableOpacity onPress={exportData} style={styles.exportButton}>
+            <Ionicons name="download-outline" size={24} color="#f8fafc" />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={exportPDF} style={styles.exportButton}>
+            <Ionicons name="document-text-outline" size={24} color="#f8fafc" />
+          </TouchableOpacity>
+        </View>
       </View>
 
       <LinearGradient
