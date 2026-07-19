@@ -2,6 +2,9 @@
 
 A beautiful, high-performance, and feature-rich Expense Tracking application built with **React Native**, **Expo**, and **Firebase**. 
 
+### 📱 [Download ExpenseTracker.apk Here](https://github.com/shivanshmax-Monster/ExpenseTrackerApp/raw/master/ExpenseTracker.apk)
+*(Tap the link above from your Android device to install the app directly!)*
+
 ExpenseTrackerApp helps you monitor your spending, track income, view visual analytics, set monthly budgets, and export all your financial data seamlessly.
 
 ---
