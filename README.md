@@ -32,7 +32,15 @@ ExpenseTrackerApp helps you monitor your spending, track income, view visual ana
 
 ## 📥 Installation Instructions
 
-### Option 1: Run from Source Code (Development)
+### Option 1: Direct Installation (APK)
+The easiest way to test the app is to download and install the compiled APK directly on your Android device:
+1. Open this repository on your Android phone's web browser.
+2. Tap here to download the app: **[Download ExpenseTracker.apk](https://github.com/shivanshmax-Monster/ExpenseTrackerApp/raw/master/ExpenseTracker.apk)**
+3. Open the downloaded `.apk` file and tap **Install**. *(You may need to allow "Install unknown apps" in your Android settings)*.
+
+---
+
+### Option 2: Run from Source Code (Development)
 
 To run this project locally on your own machine for development or testing:
 
